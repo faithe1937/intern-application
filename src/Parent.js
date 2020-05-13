@@ -4,7 +4,7 @@ import useInterval from "./useInterval";
 
 function Parent() {
   const [color, setColor] = useState("#4682B4");
-  const [blink, setBlink] = useState(false);
+  const [blink, setBlink] = useState(null);
   const [interval, setInterval] = useState(1000);
 
   useInterval(() => setBlink(!blink), interval);
